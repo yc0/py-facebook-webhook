@@ -4,7 +4,6 @@ python:
   - '3.6'
 sudo: true
 install:
-  - pip install uvloop
-  - pip install sanic
-  - pip install requests
-script: pytest
+  - pip install -r requirement.txt
+script: 
+  pytest
