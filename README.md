@@ -29,11 +29,13 @@ Steps to get up and running:
 
 I adopt environment variables to inject the PAGE_TOKEN and VERIFY_TOKEN for security, and easy to port on the docker environment.
 
+
 ```
+$ pip install -r requirment.txt
 $ VERIFY_TOKEN=<your verfiy token> PAGE_ACCESS_TOKEN=<your page token> python -m app.py 
 ```
 
-the module support 5 parameters for non web server like unicorn or nginx. Since the webhook in Facebook needs SSL, you must run with CERT.
+the module support 5 parameters for non web server like gunicorn or nginx. Since the webhook in Facebook needs SSL, you must run with CERT.
 
 
 --host 

@@ -1,0 +1,4 @@
+requests==2.18.4
+sanic==0.7.0
+uvloop==0.9.1
+

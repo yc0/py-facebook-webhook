@@ -6,4 +6,4 @@ sudo: true
 install:
   - pip install uvloop
   - pip install sanic
-script: pytest
+  - pip install requests
