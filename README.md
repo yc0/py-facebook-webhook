@@ -3,10 +3,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build](https://travis-ci.org/yc0/py-facebook-webhook.svg?branch=master)](https://travis-ci.org/yc0/py-facebook-webhook)
 
-A basic scaffold for Facebook messenger bot in Sanic : Async web server that's written to go fast
+A basic scaffold for high performance Facebook messenger bot in Sanic : Async web server that's written to go fast
 
 Sanic is very **high performance** JSON serialization, so it is very suitable for facebook webhook. Please refer the benchmark and related test source codes 
 [Techempower](https://www.techempower.com/benchmarks/#section=data-r15&hw=ph&test=json)
+
+## Key Features
+
+- uvloop : which is a fast, drop-in replacement of the built-in asyncio event loop. uvloop is implemented in **Cython** and uses libuv under the hood.
+- aiohttp : which is an HTTP client/server for **asyncio**.
+- webhook
+- facebook
 
 ## Get Started
 
@@ -25,7 +32,7 @@ Steps to get up and running:
   ![](img/app-setup.png)
   ![](img/edit-subscription.png)
   
-  > **Verify Token** is any string you like to help your webhook app confirm or authenticate the source.
+  Verify Token is any string you like to help your webhook app confirm or authenticate the source.
 
 ## Run your webhook
 
