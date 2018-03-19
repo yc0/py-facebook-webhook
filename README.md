@@ -21,8 +21,10 @@ Steps to get up and running:
 - Generate a token for your page. 
 
 - Edit your webhook configuration
+
   ![](img/app-setup.png)
   ![](img/edit-subscription.png)
+  
   > **Verify Token** is any string you like to help your webhook app confirm or authenticate the source.
 
 ## Run your webhook
@@ -37,12 +39,13 @@ $ VERIFY_TOKEN=<your verfiy token> PAGE_ACCESS_TOKEN=<your page token> python -m
 
 the module support 5 parameters for non web server like gunicorn or nginx. Since the webhook in Facebook needs SSL, you must run with CERT.
 
-
+```
 --host 
 -p, --port the app running port.
 -d, --debug enable debug mode.
 --cert, put your cert, 
 --key, your cert passphrase.
+```
 
 
 ## benchmark

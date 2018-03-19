@@ -102,3 +102,4 @@ ENV/
 .vscode/
 .DS_Store
 sslforfree/
+.pytest_cache/

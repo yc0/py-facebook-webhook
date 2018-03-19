@@ -7,3 +7,4 @@ install:
   - pip install uvloop
   - pip install sanic
   - pip install requests
+script: pytest
