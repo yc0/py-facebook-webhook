@@ -57,3 +57,23 @@ the module support 5 parameters for non web server like gunicorn or nginx. Since
 
 ## benchmark
 https://blog.signifai.io/not-your-fathers-python-amazing-powerful-frameworks/
+
+## local test
+While you try to test a webhook on your own circumstance, you might encounter callback issues.
+Callback function always needs two requirements:
+
+- Domain name
+- SSL (HTTPS)
+
+The testing procedure would like this.
+1. coding on the local site, and debuging with experience.
+2. upload toward server
+3. On your chatbot platform, check if the req-ack work well
+4. Check log message on server
+5. If there's an error, go back to step 1
+
+Ngrok is an antidote for this situation.
+It provides localhost toward https with domain name
+such as localhost:5000 to https://bbcc3.ngrok.com
+
+you can go visiting [https://ngrok.com/](https://ngrok.com/), and check how you can exploit it well.
